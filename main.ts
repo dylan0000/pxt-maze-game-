@@ -10,73 +10,73 @@ let mysprite2: Sprite = null
 // map
 scene.setTileMap(img`
 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 7 7 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 4 4 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 4 4 4 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 4 4 4 e 4 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 4 4 4 e 4 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 5 
-5 7 7 7 7 7 4 4 4 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 5 
-5 7 7 7 7 4 4 4 4 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 4 4 4 4 4 7 8 8 b b 7 7 7 7 7 7 7 7 7 7 7 4 4 4 7 7 5 
-5 7 7 7 7 7 4 4 4 7 7 7 8 b b b 7 7 7 7 7 7 7 7 7 7 4 7 7 7 7 5 
-5 7 7 7 7 7 7 e 7 7 7 7 8 b b b 7 7 7 7 7 7 7 7 4 7 7 7 7 7 7 5 
-5 7 7 7 7 4 7 e 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 4 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 7 8 4 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 4 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 4 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 4 4 4 7 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 4 4 4 4 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 7 3 3 3 3 7 7 7 7 7 7 7 7 4 4 4 4 4 7 5 
-5 7 4 4 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 4 4 4 4 7 7 5 
-5 4 4 4 4 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 e 7 7 7 5 
-5 4 4 4 4 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 e 7 7 7 5 
-5 7 4 4 4 7 7 7 7 7 7 7 7 7 8 c c 8 8 7 7 7 7 7 4 4 7 7 7 7 7 5 
-5 7 7 e 7 7 7 7 7 4 7 7 7 8 c c c c 8 7 7 7 7 4 4 4 7 7 7 7 7 5 
-5 7 7 e 7 7 7 7 4 4 4 7 8 c c c b c 8 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 8 c c b b c 8 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 7 7 7 7 7 7 7 7 7 7 7 8 c b b b b 8 7 7 7 7 7 7 7 7 7 7 7 7 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+5 1 1 1 1 1 1 1 1 1 1 1 1 5 1 5 5 1 1 1 1 1 1 1 1 5 1 1 1 1 1 5 
+5 5 5 5 5 5 5 5 5 1 5 1 5 5 1 1 1 1 5 5 5 5 5 5 1 5 1 5 1 1 1 5 
+5 1 1 1 1 5 5 5 5 1 5 1 5 5 1 5 5 1 1 1 1 5 1 1 1 5 1 5 1 1 1 5 
+5 1 5 5 1 1 1 1 5 1 5 1 1 5 1 5 1 5 5 5 1 5 5 5 5 5 1 5 5 1 1 5 
+5 1 5 5 5 5 5 1 5 1 5 5 1 5 1 5 1 1 1 1 1 1 1 1 1 5 1 1 1 5 5 5 
+5 1 5 5 1 1 1 1 5 1 1 5 1 1 1 5 1 5 5 5 5 1 5 5 1 5 5 5 1 1 1 5 
+5 1 1 5 1 5 5 1 5 5 1 5 5 5 1 1 5 5 1 1 1 1 5 1 1 1 1 1 5 5 1 5 
+5 5 1 5 1 5 5 1 1 5 1 1 1 1 5 1 1 5 1 1 5 5 5 5 5 5 1 1 5 1 1 5 
+5 5 1 5 1 1 5 5 1 1 1 5 5 1 5 1 1 5 1 5 5 1 5 1 1 1 5 1 1 1 1 5 
+5 1 1 5 1 1 5 5 5 5 1 5 5 1 1 5 1 5 5 1 5 1 5 5 5 1 5 5 5 5 5 5 
+5 1 5 5 1 1 1 1 1 1 1 1 1 5 1 5 1 1 1 1 1 1 1 1 1 1 5 1 1 5 1 5 
+5 1 1 1 1 5 5 5 1 5 5 5 1 5 1 5 5 5 5 1 5 1 5 1 5 5 5 5 1 5 1 5 
+5 1 5 5 5 5 1 5 1 5 1 5 1 5 1 1 1 1 1 1 5 1 5 1 5 1 1 1 1 5 1 5 
+5 1 1 1 1 1 1 5 1 5 1 1 1 1 5 5 1 1 5 1 5 5 5 5 5 1 5 5 5 5 1 5 
+5 5 5 5 5 5 1 5 1 5 5 5 5 1 1 5 1 5 5 5 1 1 5 1 1 1 5 1 1 1 1 5 
+5 1 5 5 1 5 1 5 1 1 1 1 5 1 5 5 5 5 5 1 1 5 5 1 5 5 5 1 5 5 5 5 
+5 1 5 5 1 5 5 5 1 5 5 1 5 1 1 1 1 1 5 1 5 1 1 1 1 1 1 1 5 1 1 5 
+5 1 5 5 1 1 1 1 1 5 1 1 1 1 5 5 5 1 1 1 5 1 5 5 5 5 1 1 5 5 1 5 
+5 1 5 1 1 5 5 5 5 5 5 5 1 5 5 1 5 5 1 5 5 5 5 1 1 1 1 1 5 1 1 5 
+5 1 5 5 1 5 1 5 1 1 1 1 1 1 5 1 1 1 1 1 5 5 1 1 1 5 5 5 5 1 5 5 
+5 1 1 1 1 5 5 5 5 1 5 5 5 1 5 1 5 5 5 1 1 1 1 5 5 5 1 1 5 1 1 5 
+5 1 5 5 5 5 1 1 5 1 5 1 5 1 5 1 1 1 1 1 5 1 5 5 1 1 1 1 5 5 1 5 
+5 5 5 1 1 1 5 5 5 5 5 1 1 1 5 5 5 5 5 5 5 1 1 1 1 5 5 1 1 1 1 5 
+5 1 1 1 5 1 1 1 5 1 1 1 5 5 5 1 1 1 5 1 1 1 1 5 5 1 5 5 1 5 1 5 
+5 1 5 5 5 1 5 5 5 1 5 5 5 1 1 1 5 1 5 5 5 1 1 1 5 5 1 5 1 1 1 5 
+5 1 5 1 1 1 1 1 1 1 5 1 1 5 5 5 1 1 1 1 5 5 5 1 5 1 5 5 5 5 5 5 
+5 1 5 1 5 5 5 5 5 1 5 1 5 1 1 1 5 1 5 5 5 1 5 1 1 1 1 1 1 1 1 5 
+5 1 5 1 1 1 1 1 5 1 5 1 5 1 5 1 5 1 5 1 5 1 5 1 5 1 5 5 1 1 1 5 
+5 1 5 1 5 5 5 1 5 5 5 5 5 1 5 1 5 1 5 1 5 1 5 5 5 1 5 1 5 5 5 5 
+5 1 5 1 5 1 1 1 1 1 1 1 1 1 5 1 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 1 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
 `)
 // when turned on, player cannot move to this color.
 // there is a color texture to add to the yellow
 scene.setTile(5, img`
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 e . e . . . . . . . . . . . . . . . . . . e e e e e e e e e 5 
-5 e . e . . . . . . . . . . . . . . . . . . . . e e . . . . . 5 
-5 e . e . . . . . . . . . . . . e e e e e e . . . e . . . . . 5 
-5 e . e . . . . . . . . . . e e e . . . . e e . . e . . . . . 5 
-5 e . e . . . . . . . . . . e . . . . . . . e . . e . . . . . 5 
-5 e . e . . . . . . . . . . e . . . . . . e e . . e e e . . . 5 
-5 e . e . . . . . . . . . . e . . e e e e . . . . . . e . . . 5 
-5 e . e . . . . . . . . . e . . . e . . . . . . . . . e . . . 5 
-5 e . e . . . . . . . . . e . . . e . . . . . . . . . e . . . 5 
-5 e . e . . . . . . . . . e . . . e e e e e e e e e e e . . . 5 
-5 e . e . . . e e e e e e e . . . . . . . . . . . . . . . . . 5 
-5 e . . . . . . . . . . . . . . . . . . . . e e e e . . . . . 5 
-5 e . . . . . . . . . . . . . . . . . . . . e . . e . . . . . 5 
-5 e . e e e e e . e e e . . . . . . e e e e e . . e . . . . . 5 
-5 e . . . . . . . . . e . . . . . e e . . . . . e e . . . . . 5 
-5 e . e . . . e . . . e e e e e e e . . . . . . e . . . . . . 5 
-5 e . e . . . e . . . e . . . . . . . . e e e e e . . . . . . 5 
-5 e . e . . . e . . . . e . . . . . . e e . . . . . . . . . . 5 
-5 e . . e e e e . . . . e e e e e . . e . . . . . . . . . . . 5 
-5 e . . e . . e . . . . . . . . e . . e e e e e e e e e . . . 5 
-5 e e e e . . e . . . . . . . . e . . . . . . . . . . e . . . 5 
-5 . . . . . . e e . . . . . . . e . . . . . . . . . . e e . . 5 
-5 . . . . . . . e e e . . . . e e . . . . . . . . . . . e e e 5 
-5 . . . . . . . . . . e e e e e . . . . . . . . . . . . . . . 5 
-5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 
-5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 
-5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 
-5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 
-5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 
-5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 `, true)
 // water
 scene.setTile(8, img`
@@ -166,7 +166,7 @@ let mySprite = sprites.create(img`
 controller.moveSprite(mySprite, 200, 200)
 // see where you are when you are moving
 scene.cameraFollowSprite(mySprite)
-for (let index = 0; index < 70; index++) {
+for (let index = 0; index < 40; index++) {
     mysprite2 = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
